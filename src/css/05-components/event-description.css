@@ -1,0 +1,11 @@
+.event-description p {
+  font-family: var(--heading-text);
+  letter-spacing: 0.03em;
+  line-height: calc(var(--line-height) + 0.05em);
+}
+
+@media screen and (min-width: 1200px) {
+  .event-description {
+    grid-column: 2 / span 3;
+  }
+}

@@ -17,6 +17,7 @@ module.exports = {
     'consistent-return': 0,
     'comma-dangle': 0,
     'func-names': 0,
+    'indent': 0,
     'linebreak-style': 0,
     // 'max-len': 0,
     'no-mixed-operators': 0,

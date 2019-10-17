@@ -1,0 +1,18 @@
+.bar-container {
+  width: 100%;
+  position: relative;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--text-color);
+}
+.bar {
+  background-color: var(--primary-color);
+  height: 20px;
+}
+.bar-graph-scale {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: var(--heading-text);
+  letter-spacing: 0.03em;
+  font-size: var(--small-font-size);
+}

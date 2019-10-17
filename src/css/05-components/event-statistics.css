@@ -1,0 +1,16 @@
+.event-statistics {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-row-gap: 24px;
+}
+
+.event-statistics strong {
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .event-statistics {
+    grid-column: 5 / span 2;
+  }
+}

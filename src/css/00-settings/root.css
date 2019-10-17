@@ -1,0 +1,13 @@
+:root {
+  --background-color: #f3eee3;
+  --primary-color: #de0000;
+  --secondary-color: #8e887b;
+  --heading-text: brandon-grotesque, sans-serif;
+  --body-text: superclarendon, serif;
+  --text-color: #333;
+  --font-size: 18px;
+  --small-font-size: 0.8333em;
+  --line-height: 1.3em;
+  --margin-horizontal: 12.8%;
+  --margin-vertical: 8.85%;
+}
