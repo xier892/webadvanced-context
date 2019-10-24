@@ -3,9 +3,17 @@
   grid-template-rows: repeat(2, auto);
   grid-row-gap: 16px;
 }
+.event-details-block {
+  word-wrap: break-word;
+}
 
 @media screen and (min-width: 1200px) {
   .event-details {
+    display: flex;
     grid-column: 1 / span 1;
+    flex-direction: column;
+  }
+  .event-details-block:not(:last-of-type) {
+    margin-bottom: 40px;
   }
 }

@@ -10,10 +10,3 @@ const sendHttpRequest = (url, callback) => {
   };
   xhr.send();
 };
-
-window.onload = () => {
-  sendHttpRequest('https://api.fda.gov/device/event.json?search=event_type:death&limit=100', (response) => { global.events = response; });
-  sendHttpRequest('https://api.fda.gov/device/event.json?search=event_type:death&count=device.openfda.device_name.exact', (response) => { global.deviceNames = response; });
-
-  console.log(global);
-};
