@@ -32,9 +32,14 @@ class Statistics extends Event {
     const p = document.createElement('p');
     if (this.fatalities !== undefined) {
       const fatalitiesCount = document.createElement('strong');
+      fatalitiesCount.className = 'primary-color';
       fatalitiesCount.appendChild(document.createTextNode(this.fatalitiesCount));
+      const deviceName = document.createElement('span');
+      deviceName.className = 'secondary-color';
+      deviceName.appendChild(document.createTextNode(this.device));
       p.appendChild(fatalitiesCount);
-      p.appendChild(document.createTextNode(' reported fatalities have been caused by this kind of device'));
+      p.appendChild(document.createTextNode(' reported fatalities have been caused by '));
+      p.appendChild(deviceName);
     } else {
       p.appendChild(document.createTextNode('No statistics are availble for this device.'));
     }

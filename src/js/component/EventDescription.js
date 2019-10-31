@@ -11,7 +11,7 @@ class Description extends Event {
     h2.appendChild(document.createTextNode('Description of event or problem'));
 
     const p = document.createElement('p');
-    p.appendChild(document.createTextNode(this.description));
+    p.appendChild(document.createTextNode(convertToSentenceCase(this.description)));
 
     fragment.appendChild(h2);
     fragment.appendChild(p);

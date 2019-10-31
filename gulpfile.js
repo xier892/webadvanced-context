@@ -13,7 +13,8 @@ const uglifycss = require('gulp-uglifycss');
 
 gulp.task('js', function() {
   return gulp.src([
-    'src/js/*/*.js',
+    'src/js/lib/*.js',
+    'src/js/component/*.js',
     'src/js/*.js',
     '!src/js/main.js',
     'src/js/main.js'])
